@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const config = require('./config.json');
 const port = !isNaN(Number(process.argv[2])) ? Number(process.argv[2]) : config.port;
-const {version} = require('./package.json');
+const version = "0.0.2";
 const arduino_dir = __dirname + "/arduino-1.8.5";
 const arduino = new (require("./arduino.js"))(arduino_dir);
 
